@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the MCAT Progress Pal Chrome extension.">
+  <title>MCAT Progress Pal Privacy Policy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="policy">
+    <header class="policy-header">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>MCAT Progress Pal</h1>
+      <dl class="policy-details">
+        <div>
+          <dt>Publisher</dt>
+          <dd>Ari Baral</dd>
+        </div>
+        <div>
+          <dt>Effective date</dt>
+          <dd><time datetime="2026-08-27">August 27, 2026</time></dd>
+        </div>
+        <div>
+          <dt>Contact</dt>
+          <dd><a href="mailto:mcatprogresspal@gmail.com">mcatprogresspal@gmail.com</a></dd>
+        </div>
+      </dl>
+    </header>
+
+    <article class="policy-content">
+      <p>MCAT Progress Pal is designed to keep user data inside the user's Chrome profile. The extension does not provide an account, cloud database, analytics service, advertising service, or remote API.</p>
+
+      <p>Tracking is off until the user enables it for a supported review site. When tracking is enabled, the extension reads information visible on supported AAMC MCAT Official Prep and Kaplan review pages that is needed to identify and categorize the reviewed question. Depending on the page, this can include:</p>
+
+      <ul>
+        <li>the review page URL and MCAT resource;</li>
+        <li>question number, question text, answer-choice text, explanation or solution text, and site-provided taxonomy labels;</li>
+        <li>whether the answer was correct and the displayed time spent;</li>
+        <li>practice-exam and MCAT-section labels; and</li>
+        <li>notes and error-type selections entered by the user.</li>
+      </ul>
+
+      <p>Question, passage, answer-choice, explanation, and solution text is processed temporarily on the review page for taxonomy classification. None of that source text, normalized source text, excerpts, evidence fragments, matched aliases, or taxonomy audit trails is saved. The stored review record contains only the final taxonomy assignment and source-free progress metadata. After an update, an idempotent local migration removes any source-evidence and unknown fields from review records created by an earlier version and deletes obsolete generated-question records.</p>
+
+      <p>Notes are free-form user-authored fields. The note editor tells users to use their own words and not copy or paste AAMC or Kaplan question, answer, or explanation text. The extension cannot reliably distinguish a user's own writing from text the user manually pastes into a note, so it cannot technically guarantee removal of source content that a user deliberately enters there.</p>
+
+      <p>The Equation Recall exercise stores per-equation aggregate progress, including attempt counts, result counts, correct-blank counts, streak, and the time and result of the latest attempt. Individual typed answers and complete exercise sessions are not persisted.</p>
+
+      <p>Dashboard statistics are calculated locally from stored review and exercise records. The extension also stores local preferences such as per-site tracking settings, the floating-panel mode and position, taxonomy-version selections, and acknowledgement of the tracking privacy disclosure.</p>
+
+      <p>All persistent user data is stored with <code>chrome.storage.local</code>. This storage belongs to MCAT Progress Pal within the current Chrome profile. The extension does not use <code>chrome.storage.sync</code>, page <code>localStorage</code>, <code>sessionStorage</code>, IndexedDB, cookies, or a remote database.</p>
+
+      <p>Data remains until the user deletes it from Dashboard &gt; Settings &gt; Data &amp; Privacy, clears the extension's data through Chrome, or uninstalls the extension. Turning tracking off stops new review-page collection but does not delete existing records.</p>
+
+      <p>Chrome profiles are the privacy boundary. A different person installing the extension in another Chrome profile or on another device cannot access this profile's extension storage through MCAT Progress Pal. People who share the same Chrome profile, or who can access the device, Chrome profile files, extension developer tools, backups, or an administrator account, may be able to access local data.</p>
+
+      <p>MCAT Progress Pal does not transmit user data outside the browser. It makes no requests to an external API, analytics provider, advertising network, cloud database, or publisher server.</p>
+
+      <p>The extension loads its equation dataset, taxonomy datasets, scripts, and styles from files packaged inside the extension. These are <code>chrome-extension://</code> resources, not network services. Exported CSV files are created locally and downloaded only at the user's request.</p>
+
+      <p>Notes are handled within the extension and are not made available to the supported website by MCAT Progress Pal.</p>
+
+      <p>MCAT Progress Pal uses review-page information and user-entered data only to provide its user-facing question categorization, notes, exercises, exports, and progress analytics. The data is not sold, shared, used for advertising, or used to determine creditworthiness or lending eligibility. Because the extension does not transmit this data to the publisher or another service, the publisher and other people are not given access to read it through MCAT Progress Pal.</p>
+
+      <p>MCAT Progress Pal uses this information only to provide the extension's disclosed functionality, including question categorization, notes, exercises, exports, and progress analytics.</p>
+
+      <p>The extension requests the Chrome storage permission to save the data described above. Its content scripts run only on the supported AAMC MCAT Official Prep and Kaplan host patterns declared in the extension manifest. Site access allows the extension to read the relevant review-page content locally when tracking is enabled.</p>
+
+      <p>Users can keep tracking off, turn it on or off separately for supported review contexts, choose when the private floating panel appears, export notes to a local CSV file, and permanently clear all extension data from Dashboard &gt; Settings &gt; Data &amp; Privacy.</p>
+
+      <p class="contact-line"><a href="mailto:mcatprogresspal@gmail.com">mcatprogresspal@gmail.com</a></p>
+    </article>
+  </main>
+</body>
+</html>
